@@ -1,0 +1,32 @@
+.counter_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.counter_box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid orange;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.counter_container h1 {
+    color: orange;
+    font-size: 40px;
+    margin: 0;
+    color: black;
+}
+
+.counter_buttons button{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 10px; /* Add margin if needed */
+}

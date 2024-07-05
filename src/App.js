@@ -1,36 +1,19 @@
-import React, { useState } from "react";
-import "primereact/resources/themes/bootstrap4-dark-purple/theme.css";
+import React from "react";
 import "./App.css";
-import { InputText } from "primereact/inputtext";
-import "primeicons/primeicons.css";
+import Search from "./components/Search";
+import ProjectsGrid from "./components/ProjectsGrid";
 
 function App() {
-  const [inputValue, setInputValue] = useState("");
-
-  const handleChange = (event) => {
-    setInputValue(event.target.value);
-  };
-
-  const handleSubmit = () => {
-    alert(`Input Value: ${inputValue}`);
-    setInputValue("");
-  };
   return (
     <>
       <div className="container">
         <div className="app_title">
           <h1>Coding Challenges</h1>
         </div>
-        <div className="filter_container">
-          <InputText value={inputValue} onChange={handleChange} className="p-inputtext-sm"/>
-          <div className="submit_icon">
-            <i
-              onClick={handleSubmit}
-              className="pi pi-search"
-              style={{ color: "orange" }}
-            ></i>
-          </div>
-        </div>
+        <Search />
+        <>
+        <ProjectsGrid />
+        </>
       </div>
     </>
   );
