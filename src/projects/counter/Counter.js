@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "primereact/button";
-import "../styles/counter.css";
+import "./counter.css";
 
 const Counter = () => {
   const [counter, setCounter] = useState(0);

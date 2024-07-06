@@ -1,0 +1,30 @@
+.todo_app {
+    text-align: center;
+  }
+  
+  .input {
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-left: 5px;
+  }
+  
