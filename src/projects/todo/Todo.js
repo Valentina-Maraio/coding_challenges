@@ -18,6 +18,12 @@ const Todo = () => {
     setTodos(newTodos);
   };
 
+  const updateTodo = (index, newText) => {
+    const newTodos = [...todos];
+    newTodos[index].text = newText;
+    setTodos(newTodos);
+  };
+
   const completeTodo = (index) => {
     const newTodos = [...todos];
     newTodos[index].isCompleted = !newTodos[index].isCompleted;
@@ -37,6 +43,7 @@ const Todo = () => {
         <TodoForm addTodo={addTodo} />
         <TodoList
           todos={todos}
+          updateTodo={updateTodo}
           completeTodo={completeTodo}
           removeTodo={removeTodo}
         />
