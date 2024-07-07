@@ -39,3 +39,14 @@
 button {
   margin-left: 5px;
 }
+
+@media screen and (max-width: 767px) {
+  .todo {
+    width: auto;
+    margin: 5px;
+  }
+
+  button {
+    width: 25px;
+  }
+}
