@@ -1,4 +1,7 @@
 import React, {useState} from 'react'
+import { InputText } from 'primereact/inputtext';
+import { Button } from 'primereact/button';
+
 
 const TodoForm = ({addTodo}) => {
     const [value, setValue] = useState('');
@@ -11,16 +14,12 @@ const TodoForm = ({addTodo}) => {
     }
   return (
     <>
-    <form onSubmit={handleSubmit}>
-        <input 
-        type="text"
-        className="input"
+        <InputText 
         value={value}
         onChange={(event) => setValue(event.target.value)}
         placeholder='Add a new todo item'
         />
-        <button type="submit">Add</button>
-    </form>
+          <Button onClick={handleSubmit} icon="pi pi-plus-circle" />
     </>
   )
 }

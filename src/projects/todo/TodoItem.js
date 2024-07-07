@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import './todo.css'
+import "./todo.css";
+import { Button } from "primereact/button";
 
 const TodoItem = ({ todo, index, updateTodo, completeTodo, removeTodo }) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -24,7 +25,7 @@ const TodoItem = ({ todo, index, updateTodo, completeTodo, removeTodo }) => {
       <div className="todo">
         <div className={`todo-item ${todo.isCompleted ? "completed" : ""}`}>
           {isEditing ? (
-            <div>
+            <div className="list_items">
               <input
                 type="text"
                 value={editedText}
@@ -36,13 +37,15 @@ const TodoItem = ({ todo, index, updateTodo, completeTodo, removeTodo }) => {
           ) : (
             <>
               <span>{todo.text}</span>
-              <button onClick={handleUpdate}>Update</button>
+              <Button icon="pi pi-pencil" onClick={handleUpdate} />
             </>
           )}
-          <button onClick={() => completeTodo(index)}>
-            {todo.isCompleted ? "Undo" : "Complete"}
-          </button>
-          <button onClick={() => removeTodo(index)}>Delete</button>
+          <Button
+            onClick={() => completeTodo(index)}
+            icon={todo.isCompleted ? "pi pi-undo" : "pi pi-check"}
+            className="p-button-rounded p-button-text"
+          />
+          <Button onClick={() => removeTodo(index)} icon="pi pi-eraser" />
         </div>
       </div>
     </>
