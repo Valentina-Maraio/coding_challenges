@@ -1,16 +1,16 @@
 .project_container {
   display: grid;
-  grid-template-rows: repeat(auto-fill, 250px);
-  grid-template-columns: repeat(auto-fill, 250px);
+  grid-template-rows: repeat(auto-fill, 350px);
+  grid-template-columns: repeat(auto-fill, 350px);
   justify-content: center;
   padding: 30px;
   gap: 15px;
   grid-template-areas:
-    "   item1   item3  item5  item5  .   "
-    "   item10  item3  item5  item5  .   "
-    "   item9   item9  item2  item2  .   "
-    "   item4   item8  item7  item7  .   "
-    "   item4   item6  item6  item6  .   ";
+    "   item1   item10  item5  item5  .   "
+    "   item3  item10  item5  item5  .   "
+    "   item9   item9   item2  item2  .   "
+    "   item4   item8   item7  item7  .   "
+    "   item4   item6   item6  item6  .   ";
 }
 
 .item1 {
@@ -18,14 +18,15 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  border: 1px solid white;
 }
 
 .item2 {
   grid-area: item2;
-  background-color: orange;
   align-items: center;
   justify-content: center;
   display: flex;
+  border: 1px solid white;
 }
 
 .item3 {
@@ -34,6 +35,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  border: 1px solid white;
 }
 
 .item4 {
@@ -42,6 +44,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  border: 1px solid white;
 }
 
 .item5 {
@@ -50,6 +53,8 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  border: 1px solid white;
+  padding: 20px;
 }
 
 .item6 {
@@ -58,6 +63,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  border: 1px solid white;
 }
 
 .item7 {
@@ -74,6 +80,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  border: 1px solid white;
 }
 
 .item9 {
@@ -82,14 +89,16 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  border: 1px solid white;
 }
 
 .item10 {
   grid-area: item10;
-  background-color: #808000;
+  background-color: white;
   align-items: center;
   justify-content: center;
   display: flex;
+  border: 1px solid white;
 }
 
 @media screen and (max-width: 767px) {
