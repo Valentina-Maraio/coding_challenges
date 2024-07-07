@@ -3,6 +3,7 @@ import Counter from "../projects/counter/Counter";
 import "../styles/project_grid.css";
 import TicTacToe from "../projects/tic_tac_toe/TicTacToe";
 import Todo from "../projects/todo/Todo";
+import Snake from "../projects/tetris/Snake";
 
 const ProjectsGrid = () => {
   return (
@@ -23,7 +24,9 @@ const ProjectsGrid = () => {
         <div class="item item9">
           <Todo/>
         </div>
-        <div class="item item10">10</div>
+        <div class="item item10">
+          <Snake />
+        </div>
       </div>
     </>
   );

@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import './tictactoe.css'
+import React, { useState } from "react";
+import "./tictactoe.css";
 
 function TicTacToe() {
   const [board, setBoard] = useState(Array(9).fill(null));
-  const [currentPlayer, setCurrentPlayer] = useState('X');
+  const [currentPlayer, setCurrentPlayer] = useState("X");
 
   const handleClick = (index) => {
     if (board[index] === null) {
       const newBoard = [...board];
       newBoard[index] = currentPlayer;
       setBoard(newBoard);
-      setCurrentPlayer(currentPlayer === 'X' ? 'O' : 'X');
+      setCurrentPlayer(currentPlayer === "X" ? "O" : "X");
     }
   };
 
@@ -34,7 +34,7 @@ function TicTacToe() {
     }
 
     if (board.every((cell) => cell !== null)) {
-      return 'tie';
+      return "tie";
     }
 
     return null;
@@ -44,7 +44,7 @@ function TicTacToe() {
 
   const handleReset = () => {
     setBoard(Array(9).fill(null));
-    setCurrentPlayer('X');
+    setCurrentPlayer("X");
   };
 
   return (
@@ -53,7 +53,7 @@ function TicTacToe() {
         {board.map((cell, index) => (
           <div
             key={index}
-            className="square"
+            className={`square ${board[index] === "X" ? "X" : "O"}`}
             onClick={() => handleClick(index)}
           >
             {cell}
@@ -61,15 +61,11 @@ function TicTacToe() {
         ))}
       </div>
       <div className="status">
-        {winner ? (
-          winner === 'tie' ? (
-            'Tie'
-          ) : (
-            `Winner: ${winner}`
-          )
-        ) : (
-          `Next player: ${currentPlayer}`
-        )}
+        {winner
+          ? winner === "tie"
+            ? "Tie"
+            : `Winner: ${winner}`
+          : `Next player: ${currentPlayer}`}
       </div>
       <button className="reset" onClick={handleReset}>
         Reset

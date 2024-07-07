@@ -9,7 +9,6 @@
   .square {
     width: 100px;
     height: 100px;
-    background-color: #f2f2f2;
     border: 1px solid #ccc;
     display: flex;
     justify-content: center;
@@ -17,10 +16,15 @@
     font-size: 48px;
     font-weight: bold;
     cursor: pointer;
+    background-color: black;
+  }
+
+  .square.X {
+    color: orange;
   }
   
-  .square:hover {
-    background-color: #e6e6e6;
+  .square.O {
+    color: red;
   }
   
   .status {

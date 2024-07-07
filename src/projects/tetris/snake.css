@@ -1,0 +1,30 @@
+.snake_container img {
+    width: 320px;
+    height: 430px;
+    border-radius: 20px;
+    object-fit:  contain;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    position: absolute;
+    z-index: 2;
+    width: 320px;
+    height: 200px;
+}
+
+.game {
+    border: 1px solid black;
+    width: 140px;
+    margin: 56px;
+    height: 129px;
+}
+
+video{
+    border: 1px solid black;
+    width: 140px;
+    height: 129px;
+    object-fit:  contain;
+}

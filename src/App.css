@@ -13,13 +13,3 @@ body {
 .app_title {
   color: orange;
 }
-
-.card_project_border {
-  width: 200px;
-  height: 250px;
-  border: 2px solid white;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
