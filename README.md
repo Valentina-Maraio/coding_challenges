@@ -1,3 +1,5 @@
+# I'm gathering all the little projects I've completed in the last years and making a web page out of it to show off my work
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
