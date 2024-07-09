@@ -5,6 +5,7 @@ import TicTacToe from "../projects/tic_tac_toe/TicTacToe";
 import Todo from "../projects/todo/Todo";
 import Snake from "../projects/tetris/Snake";
 import Player from "../projects/mp3player/Player";
+import PlayerCard from "../projects/mp3player/PlayerCard/PlayerCard";
 
 const ProjectsGrid = () => {
   return (
@@ -29,6 +30,9 @@ const ProjectsGrid = () => {
         </div>
         <div class="item item10">
           <Snake />
+        </div>
+        <div class="item item11">
+          <PlayerCard/>
         </div>
       </div>
     </>

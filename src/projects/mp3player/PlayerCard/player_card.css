@@ -1,0 +1,6 @@
+.card_container {
+  display: flex;
+  justify-content: center;
+  align-item: center;
+  margin: 40px;
+}
