@@ -7,10 +7,12 @@
   gap: 15px;
   grid-template-areas:
     "   item1   item10  item5  item5  .   "
-    "   item3  item10  item5  item5  .   "
+    "   item3   item10  item5  item5  .   "
     "   item9   item9   item2  item2  .   "
     "   item4   item8   item7  item7  .   "
-    "   item4   item6   item6  item6  .   ";
+    "   item4   item6   item6  item6  .   "
+    "   item11  item11  item11 item11 .   "
+    ;
 }
 
 .item1 {
@@ -101,6 +103,14 @@
   border: 1px solid white;
 }
 
+.item11 {
+  grid-area: item11;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 1px solid white;
+}
+
 @media screen and (max-width: 767px) {
   .project_container {
     display: grid;
@@ -120,6 +130,7 @@
       "   item8    "
       "   item9    "
       "   item10   "
+      "   item11   "
       ;
   }
 }
